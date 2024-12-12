@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/586c0af071.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style type="text/css">
+        * {
+            text-decoration: none;
+
+        }
+
+        .navbar {
+            background: #131313;
+            font-family: 'Kumbh Sans', sans-serif;
+            padding-right: 15px;
+            padding-left: 15px;
+
+        }
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .logo {
+            background-color: #ff8177;
+            background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 2rem;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        li a {
+            margin-right: 100px;
+            font-size: 25px;
+            color: #fff;
+        }
+
+        li a:hover {
+            color: #f77062;
+            transition: all 0.3s ease;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#"><i class="fas fa-gem"></i>TRAMP</a></div>
+            <ul>
+                <li><a href="/">Home</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="afa5c495-eac4-42ce-afad-673fda9b0141">
+
+            <input type="text" name="name" placeholder="Your name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs " required></textarea>
+            <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
+        </form>
+        <div class="contact-right">
+            <img src="assets/message.svg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
